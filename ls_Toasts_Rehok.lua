@@ -16,6 +16,11 @@ function LST:SkinToast(toast, toastType)
 	toast.Title:SetFont([[Interface\AddOns\ls_Toasts_Rehok\media\Expressway.ttf]], 16)
 	toast.Title:SetPoint("TOPLEFT", 55, -12)
 	
+	if toast.IconText1 then
+		if #toast.IconText1 <= 1 then
+			toast.IconText1:SetText("")
+		end
+	end
 	if toast.IconBorder then
 		local r, g, b = toast.IconBorder:GetVertexColor()
 		
