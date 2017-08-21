@@ -6,7 +6,7 @@ local LST = unpack(ls_Toasts)
 
 function LST:SkinToast(toast, toastType)
 	toast.Border:SetAlpha(1)
-	toast.Border:SetVertexColor(1,0,0)
+	toast.Border:SetVertexColor(0,0,0)
 	toast.TextBG:SetAlpha(1)
 	toast.BG:SetTexture([[Interface\AddOns\ls_Toasts_Rehok\media\normTex2.tga]]) -- This is from ElvUI
 	toast.BG:SetAlpha(1)
