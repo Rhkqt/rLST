@@ -25,4 +25,6 @@ function LST:SkinToast(toast, toastType)
 	if toast.Dragon then
 		toast.Dragon:SetTexture()
 	end
+	
+	-- Scale screws up sizing of the border. Find a way to resize the border to keep it matched with the size of the toasts
 end
