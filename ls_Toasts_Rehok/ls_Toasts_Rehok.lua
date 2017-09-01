@@ -30,13 +30,13 @@ function LST:SkinToast(toast, toastType)
 		return toast.iconHL:SetTexture()
 	end
 	if toast.Shine then
-		toast.Shine:SetTexture("")
+		toast.Shine:SetTexture()
 	end
 	if toast.Glow then
-		toast.Glow:SetTexture("")
+		toast.Glow:SetTexture()
 	end
 	if toast.Dragon then
-		toast.Dragon:SetTexture("")
+		toast.Dragon:SetTexture()
 	end
 
 end
