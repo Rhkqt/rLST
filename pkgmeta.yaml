@@ -1,2 +1,4 @@
+package-as: ls_Toasts_Rehok
+
 move-folders:
   Ls_Toasts_Rehok/ls_Toasts_Rehok: ls_Toasts_Rehok
