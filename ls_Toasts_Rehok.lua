@@ -22,6 +22,8 @@ function LST:SkinToast(toast, toastType)
 	local r,g,b = toast.Border:GetVertexColor()
 
 	if (r >= 0.9) and (g >= 0.9) and (b >= 0.9) then
+		toast.Icon:SetSize(44,46)
+		toast.Icon:SetPoint("TOPLEFT", 6, -6)
 		toast.Border:SetTexture([[Interface\AddOns\ls_Toasts_Rehok\media\black-Border.TGA]])
 	end
 	if toast.iconHL then
