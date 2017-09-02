@@ -21,20 +21,29 @@ function LST:SkinToast(toast, toastType)
 
 	local r,g,b = toast.Border:GetVertexColor()
 
+	-- Fixes Currency icons
 	if (r >= 0.9) and (g >= 0.9) and (b >= 0.9) then
 		toast.Icon:SetSize(44,46)
 		toast.Icon:SetPoint("TOPLEFT", 6, -6)
 		toast.Border:SetTexture([[Interface\AddOns\ls_Toasts_Rehok\media\black-Border.TGA]])
 	end
-	if toast.iconHL then
+	-- Fixes Archaeology icon
+	if (r >= 0.9 and r < 0.92) and (g >= 0.39 and g < 0.41) and (b >= 0.1 and b < 0.11) then
+		toast.Icon:SetPoint("TOPLEFT", 7, -3)
+		toast.Icon:SetSize(76, 76)
+	end
+
+	-- Testing removal of glow --
+	if toast.iconHL then -- Doesnt work
 		return toast.iconHL:SetTexture()
 	end
-	if toast.Shine then
+	if toast.Shine then -- Doesnt work
 		toast.Shine:SetTexture()
 	end
-	if toast.Glow then
+	if toast.Glow then -- Doesnt work
 		toast.Glow:SetTexture()
 	end
+	--------
 	if toast.Dragon then
 		toast.Dragon:SetTexture()
 	end
