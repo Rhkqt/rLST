@@ -1,4 +1,4 @@
-## Interface: 70200
+## Interface: 70300
 ## Author: Rehok
 ## Version: 1.1
 ## Title: |cff1a9fc0ls:|r Toasts |cff1784d1Rehok|r
