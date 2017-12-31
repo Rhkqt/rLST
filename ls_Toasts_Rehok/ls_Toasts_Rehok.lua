@@ -33,17 +33,12 @@ function LST:SkinToast(toast, toastType)
 		toast.Icon:SetSize(76, 76)
 	end
 
-	-- Testing removal of glow --
-	if toast.iconHL then -- Doesnt work
+	-- Removes glow from Quest Items
+	if toast.IconHL then -- Doesnt work
 		return toast.iconHL:SetTexture()
 	end
-	if toast.Shine then -- Doesnt work
-		toast.Shine:SetTexture()
-	end
-	if toast.Glow then -- Doesnt work
-		toast.Glow:SetTexture()
-	end
-	--------
+
+	-- Removes Legendary Dragon Icon
 	if toast.Dragon then
 		toast.Dragon:SetTexture()
 	end
