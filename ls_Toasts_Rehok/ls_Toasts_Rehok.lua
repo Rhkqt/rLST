@@ -35,7 +35,7 @@ function LST:SkinToast(toast, toastType)
 
 	-- Removes glow from Quest Items
 	if toast.IconHL then -- Doesnt work
-		toast.iconHL:SetTexture()
+		toast.IconHL:SetTexture()
 	end
 
 	-- Removes Legendary Dragon Icon
