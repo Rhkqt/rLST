@@ -34,7 +34,7 @@ function LST:SkinToast(toast, toastType)
 	end
 
 	-- Removes glow from Quest Items
-	if toast.IconHL then -- Doesnt work
+	if toast.IconHL then
 		toast.IconHL:SetTexture()
 	end
 
