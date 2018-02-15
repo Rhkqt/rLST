@@ -1,5 +1,4 @@
 package-as: rLST
 
 move-folders:
-  Ls_Toasts_Rehok/ls_Toasts_Rehok: ls_Toasts_Rehok
   rLST/rLST: rLST
