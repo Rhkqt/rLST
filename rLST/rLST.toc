@@ -1,0 +1,9 @@
+## Interface: 70300
+## Author: Rehok
+## Version: 2.0
+## Title: |cff1a9fc0ls:|r Toasts |cff1784d1Rehok|r
+## Notes: Skins ls: Toasts by Rehok
+## RequiredDeps: ls_Toasts
+
+rLST.lua
+ 
