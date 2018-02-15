@@ -3,8 +3,7 @@ if not IsAddOnLoaded 'ls_Toasts' then
 end
 
 local LS = unpack(ls_Toasts)
- 
--local LST = unpack(ls_Toasts)
+
 LS:RegisterSkin("rlst", {
 		name = "rLST",
 		template = "elv-no-art",
