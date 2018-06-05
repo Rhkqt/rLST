@@ -1,8 +1,11 @@
+-- End if ls_toasts isn't loaded
 if not IsAddOnLoaded 'ls_Toasts' then
 	return
 end
 
+-- Unpack the ls table to let us skin // Create the background table for the skins
 local LS = unpack(ls_Toasts)
+local background = {0,0,0,0.9}
 
 LS:RegisterSkin("rlst", {
 		name = "rLST",
@@ -21,19 +24,19 @@ LS:RegisterSkin("rlst", {
 		    hidden = true,
 		  },
 		bg = {
-				alliance = {0,0,0,0.9},
-				archaeology = alliance,
-				collection = alliance,
-				default = alliance,
-				dungeon = alliance,
-				horde = alliance,
-				legendary = alliance,
-				legion = alliance,
-				recipe = alliance,
-				store = alliance,
-				transmog = alliance,
-				upgrade = alliance,
-				worldquest = alliance,
+				alliance = background,
+				archaeology = background,
+				collection = background,
+				default = background,
+				dungeon = background,
+				horde = background,
+				legendary = background,
+				legion = background,
+				recipe = background,
+				store = background,
+				transmog = background,
+				upgrade = background,
+				worldquest = background,
 			},
 })
  
@@ -50,18 +53,18 @@ LS:RegisterSkin("rlst-colour", {
 			hidden = true,
 		},
 	bg = {
-			alliance = {0,0,0,0.9},
-			archaeology = alliance,
-			collection = alliance,
-			default = alliance,
-			dungeon = alliance,
-			horde = alliance,
-			legendary = alliance,
-			legion = alliance,
-			recipe = alliance,
-			store = alliance,
-			transmog = alliance,
-			upgrade = alliance,
-			worldquest = alliance,
+			alliance = background,
+			archaeology = background,
+			collection = background,
+			default = background,
+			dungeon = background,
+			horde = background,
+			legendary = background,
+			legion = background,
+			recipe = background,
+			store = background,
+			transmog = background,
+			upgrade = background,
+			worldquest = background,
 		},
 })
