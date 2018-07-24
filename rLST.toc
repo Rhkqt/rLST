@@ -1,0 +1,9 @@
+## Interface: 80000
+## Author: Rehok
+## Version: 2.0
+## Title: |cff0088eerLST|r
+## Notes: Skins ls: Toasts by Rehok
+## RequiredDeps: ls_Toasts
+
+rLST.lua
+ 
