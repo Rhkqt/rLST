@@ -80,7 +80,7 @@ LS:RegisterSkin("rlst-opaque", {
 		texture = {0, 0, 0, 1},
 	},
 	icon_border = {
-		color = {0,0,0,0},
+		color = {0,0,0,1},
 	},
 	dragon = {
 		hidden = true,
@@ -133,3 +133,6 @@ LS:RegisterSkin("rlst-opaque", {
 			},
 		},
 })
+
+-- Hijack Ls slash commands as I constantly type rlst :)
+SLASH_LSTOASTS3 = "/rlst"
