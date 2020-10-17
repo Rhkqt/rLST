@@ -4,11 +4,17 @@ if not IsAddOnLoaded 'ls_Toasts' then
 end
 
 -- Unpack the ls table to let us skin // Create the background table for the skins
+local unpack = unpack
 local LS = unpack(ls_Toasts)
+local E = unpack(ElvUI)
 local background = {0,0,0,0.9}
+local newStyle = "|cFF0f96d9rLST|r (New Style)"
 
+if E then
+	newStyle = "|cFF0f96d9rLST|r ("..E:TextGradient("New Style", .9, .3, .2, .4, .1, .9).."|r)"
+end
 LS:RegisterSkin("rlst", {
-	name = "rLST",
+	name = "|cFF0f96d9rLST|r",
 	template = "elv",
 	border = {
 		color = {0,0,0},
@@ -43,7 +49,7 @@ LS:RegisterSkin("rlst", {
 
 
 LS:RegisterSkin("rlst-colour", {
-	name = "rLST (Colour)",
+	name = "|cFF0f96d9rLST|r (Colour)",
 	template = "elv-no-art",
 	icon_border = {
 		color = {0,0,0,0},
@@ -72,67 +78,47 @@ LS:RegisterSkin("rlst-colour", {
 		},
 })
 
-LS:RegisterSkin("rlst-opaque", {
-	name = "rLST (Opaque)",
-	template = "elv",
+LS:RegisterSkin("rLST (New Style)", {
+	name = newStyle,
+	template = "elv-no-art",
 	border = {
-		color = {0,0,0},
-		texture = {0, 0, 0, 1},
+		texture = {0, 0, 0},
+	},
+	icon = {
+		tex_coords = {.08, .92, .08, .92},
 	},
 	icon_border = {
-		color = {0,0,0,1},
+		offset = 1,
+		texture = {0, 0, 0, 1},
+	},
+	icon_highlight = {
+		hidden = true,
+	},
+	icon_text_1 = {
+		flags = "OUTLINE",
+	},
+	icon_text_2 = {
+		flags = "OUTLINE",
 	},
 	dragon = {
 		hidden = true,
-	  },
-	icon_highlight = {
-		hidden = true,
-	  },
+	},
+	slot = {
+		tex_coords = {.08, .92, .08, .92},
+	},
+	slot_border = {
+		color = {0, 0, 0},
+		offset = 0,
+		size = 1,
+		texture = {1, 1, 1, 1},
+	},
 	bg = {
-			alliance = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
-			archaeology = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
-			azerite  = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
-			collection = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
-			default = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
-			dungeon = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
-			horde = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
-			legendary = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
-			legion = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
-			recipe = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
-			store = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
-			transmog = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
-			upgrade = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
-			worldquest = {
-				texture = "Interface\\Addons\\rLST\\media\\background.tga",
-			},
+		default = {
+			color = {0,0,0,1},
+			tex_coords = {1 / 512, 449 / 512, 1 / 128, 97 / 128},
+			tile = false,
 		},
+	},
 })
-
 -- Hijack Ls slash commands as I constantly type rlst :)
 SLASH_LSTOASTS3 = "/rlst"
