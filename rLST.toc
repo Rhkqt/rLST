@@ -1,8 +1,8 @@
-## Interface: 80100
-## Author: Rehok
+## Interface: 90001
+## Author: Rhk
 ## Version: 2.0
-## Title: |cff0088eerLST|r
-## Notes: Skins ls: Toasts by Rehok
+## Title: |cFF0f96d9rLST|r
+## Notes: Skins ls: Toasts by Rhk
 ## RequiredDeps: ls_Toasts
 
 rLST.lua
