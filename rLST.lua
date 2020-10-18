@@ -3,10 +3,14 @@ if not IsAddOnLoaded 'ls_Toasts' then
 	return
 end
 
+local E
+if ElvUI then
+	E = unpack(ElvUI)
+end
 -- Unpack the ls table to let us skin // Create the background table for the skins
 local unpack = unpack
 local LS = unpack(ls_Toasts)
-local E = unpack(ElvUI)
+
 local background = {0,0,0,0.9}
 local newStyle = "|cFF0f96d9rLST|r (New Style)"
 
