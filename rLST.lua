@@ -86,7 +86,7 @@ LS:RegisterSkin("rLST (New Style)", {
 	name = newStyle,
 	template = "elv-no-art",
 	border = {
-		texture = {0, 0, 0},
+		texture = {0, 0, 0, 1},
 	},
 	icon = {
 		tex_coords = {.08, .92, .08, .92},
@@ -118,9 +118,10 @@ LS:RegisterSkin("rLST (New Style)", {
 	},
 	bg = {
 		default = {
-			color = {0,0,0,1},
+			color = {0, 0, 0, 01},
+			texture = {0, 0, 0, 1},
 			tex_coords = {1 / 512, 449 / 512, 1 / 128, 97 / 128},
-			tile = false,
+			tile = true,
 		},
 	},
 })
