@@ -92,17 +92,17 @@ LS:RegisterSkin("rLST (New Style)", {
 		tex_coords = {.08, .92, .08, .92},
 	},
 	icon_border = {
-		offset = 1,
-		texture = {0, 0, 0, 1},
+		offset = 0,
+		texture = {1, 1, 1, 1},
 	},
 	icon_highlight = {
 		hidden = true,
 	},
 	icon_text_1 = {
-		flags = "OUTLINE",
+		flags = "SHADOWOUTLINE",
 	},
 	icon_text_2 = {
-		flags = "OUTLINE",
+		flags = "SHADOWOUTLINE",
 	},
 	dragon = {
 		hidden = true,
@@ -112,13 +112,20 @@ LS:RegisterSkin("rLST (New Style)", {
 	},
 	slot_border = {
 		color = {0, 0, 0},
-		offset = 0,
+		offset = 1,
 		size = 1,
 		texture = {1, 1, 1, 1},
 	},
+	shine = {
+		tex_coords = {403 / 512, 465 / 512, 15 / 256, 61 / 256},
+		size = {67, 50},
+		point = {
+			y = -1,
+		},
+	},
 	bg = {
 		default = {
-			color = {0, 0, 0, 01},
+			color = {0, 0, 0, 1},
 			texture = {0, 0, 0, 1},
 			tex_coords = {1 / 512, 449 / 512, 1 / 128, 97 / 128},
 			tile = true,
