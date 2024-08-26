@@ -1,5 +1,5 @@
 -- End if ls_toasts isn't loaded
-if not IsAddOnLoaded 'ls_Toasts' then
+if not C_AddOns.IsAddOnLoaded('ls_Toasts') then
 	return
 end
 
